@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Magasin</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<!--
+    Pistes améliorations : rajouter info-bulle sur chaque item 
+                           ajouter section d'information
+                           placer "Total : 0$" sur même ligne que "Prix total du panier :"
+-->
+
+<body onkeydown="clavier(event)">
+    <header>
+        <div class="title-part">
+            <h1>- Mag<span class="aLetter">A</span>sin -</h1>
+        </div>
+    </header>
+    <!-- Début cadre du tableau contenant les objets et prix -->
+    <section class="principal_window">
+        <div class="table_view">
+            <table class="table table-dark table-striped">
+                <tr>
+                    <th>Article</th>
+                    <th>Prix Unitaire</th>
+                    <th>Quantité</th>
+                    <th>Sous-total</th>
+                </tr>
+                <tr>
+                    <div>
+                        <td title="Rends 50PV">Petite ration</td>
+                        <td id="prix1" name="number">2$</td>
+                        <td><input type="number" id="petiteration" class="item_name" name="number" value="0" min="0"
+                                max="" onclick="calculatePrice()" onkeydown="return false"></td>
+                        <td type="number" id="soustotal1" class="item_sstotal" value=""></td>
+
+                </tr>
+                <tr>
+                    <td>Grosse ration</td>
+                    <td id="prix2">8$</td>
+                    <td><input type="number" id="grosseration" class="item_name" name="number" value="0" min="0" max=""
+                            onclick="calculatePrice()" onkeypress="return false"></td>
+                    <td type="number" id="soustotal2" class="item_sstotal" value=""></td>
+                </tr>
+                <tr>
+                    <td>Épée</td>
+                    <td id="prix3">20$</td>
+                    <td><input type="number" id="epee" class="item_name" name="number" value="0" min="0" max=""
+                            onclick="calculatePrice()" onkeydown="return false"></td>
+                    <td id="soustotal3" class="item_sstotal" value=""></td>
+                </tr>
+                <tr>
+                    <td>Bouclier</td>
+                    <td id="prix4">15$</td>
+                    <td><input type="number" id="bouclier" class="item_name" name="number" value="0" min="0" max=""
+                            onclick="calculatePrice()" onkeydown="return false"></td>
+                    <td id="soustotal4" class="item_sstotal" value=""></td>
+                </tr>
+                <tr>
+                    <td>Potion</td>
+                    <td id="prix5">5$</td>
+                    <td><input type="number" id="potion" class="item_name" name="number" value="0" min="0" max=""
+                            onclick="calculatePrice()" onkeydown="return false"></td>
+                    <td id="soustotal5" class="item_sstotal" value=""></td>
+                </tr>
+                <tr>
+                    <td>Sac de Toile</td>
+                    <td id="prix6">1$</td>
+                    <td><input type="number" id="sacdetoile" class="item_name" name="number" value="0" min="0" max=""
+                            onclick="calculatePrice()" onkeydown="return false"></td>
+                    <td id="soustotal6" class="item_sstotal" value=""></td>
+                </tr>
+            </table>
+        </div>
+        <div class="price_view">
+            <div class="price_total">
+                <p>Prix total du panier : <span id="sortie" onclick="calculatePrice()"></span></p>
+            </div>
+            <br />
+            <div class="first_button">
+                <button type="button" class="btn btn-dark" value="Réinitialiser" onclick="forclear()">Vider le
+                    panier</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+<footer>
+    <p>
+        Designed by #Deewolf • Tous droits Réservés • Mentions Légales
+    </p>
+</footer>
+
+</html>

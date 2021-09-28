@@ -1,0 +1,165 @@
+
+@font-face {
+    font-family: 'Raleway-it';
+    src: url("Raleway-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("Raleway-VariableFont_wght.ttf");
+}
+
+
+* {
+    font-family: 'Raleway', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.title-part {
+    background-image: white;
+    opacity: 1;
+} 
+
+.title-part .aLetter {
+    color : black;
+    margin-right: 1px;
+}
+
+h1{
+    font-size: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(180deg);
+    letter-spacing: 25px;
+}
+
+header{
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;  
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    border-bottom: 2px solid black;
+    background-image: url("pexel_1.jpeg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    transform: rotate(180deg);
+}
+
+
+
+body {
+    max-width: 100%;
+    height: 100%;
+    background-image: url("pexel_1.jpeg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    margin:0;
+    
+}
+
+
+.principal_window {
+    
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    
+}
+
+
+#petiteration {
+    height: 35px;
+    width: 50px;
+    font-size: 1.4em;
+}
+#grosseration {
+    height: 35px;
+    width: 50px;
+    font-size: 1.4em;
+}
+#epee {
+    height: 35px;
+    width: 50px;
+    font-size: 1.4em;
+}
+#bouclier {
+    height: 35px;
+    width: 50px;
+    font-size: 1.4em;
+}
+#potion {
+    height: 35px;
+    width: 50px;
+    font-size: 1.4em;
+}
+#sacdetoile {
+    height: 35px;
+    width: 50px;
+    font-size: 1.4em;
+}
+
+.table_view {
+    
+    text-align: center;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.85;
+    
+}
+
+
+.price_total{
+    margin-top: 20px;
+    font-size: 1.5em;
+    
+}
+
+
+footer {
+    position: absolute; 
+    bottom: 1px; 
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid black;
+    width: 100%;
+    opacity: 0.7em;
+    background-image: url("pexel_1.jpeg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    transform: rotate(180deg);
+}
+
+footer p {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    transform: rotate(180deg);
+}
+
+.btn-group {
+    margin-bottom: 20px;
+}
+
+.first_button{ 
+    font-size: 0.7em;
+    margin-bottom: 20px;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+
+
